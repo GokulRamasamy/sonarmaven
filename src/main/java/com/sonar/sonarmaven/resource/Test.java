@@ -11,7 +11,7 @@ public class Test {
     @RequestMapping(value="/api/test")
     public ResponseEntity<String> capitalize(@RequestParam("param1") String text){
 
-        int test = 0;
+
         String capital = "Welcome to "+text.toUpperCase();
         return ResponseEntity.ok(capital);
 
